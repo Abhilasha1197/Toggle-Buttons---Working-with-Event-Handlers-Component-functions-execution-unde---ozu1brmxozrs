@@ -2,22 +2,18 @@ import React, {useState} from 'react'
 import '../styles/App.css';
 const App = () => {
 //code here 
-  const [btn1,setbtn1] = useState(true);
-  const [btn2,setbtn2] = useState(false);
+  const [toggle,settoggle] = useState(true);
+  
 
   const handleClick = () =>{
-    setbtn1(!btn1);
-    setbtn2(!btn2);
+    settoggle(!toggle)
   }
-  
-
-  
   return (
     <div className="App">
-      <button id="btn1" onClick={handleClick}>{(btn1)? "OFF":"ON"}</button>
+      <button id="btn1" onClick={handleClick}>{(toggle)? "OFF":"ON"}</button>
       <br />
       <br />
-      <button id="btn2" onClick={handleClick}>{(btn2)?"ON":"OFF"}</button>
+      <button id="btn2" onClick={handleClick}>{(toggle)?"ON":"OFF"}</button>
     </div>
   );
 }
