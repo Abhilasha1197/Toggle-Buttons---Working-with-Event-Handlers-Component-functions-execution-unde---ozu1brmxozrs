@@ -5,7 +5,7 @@ const App = () => {
   const [btn1,setbtn1] = useState(true);
   const [btn2,setbtn2] = useState(false);
 
-  const handleClick = (e) =>{
+  const handleClick = () =>{
     setbtn1(!btn1);
     setbtn2(!btn2);
   }
